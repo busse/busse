@@ -21,7 +21,7 @@ layout: base
         <ul class="post-list">
           {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
           {%- for post in posts -%}
-            {%- if post.tags contains page.tag -%}
+
             <li>
               <span class="post-meta">{{ post.date | date: date_format }}</span>
               <h3>
@@ -33,7 +33,7 @@ layout: base
                 {{ post.excerpt }}
               {%- endif -%}
             </li>
-            {%- endif -%}
+
           {%- endfor -%}
         </ul>
         {% if site.paginate %}
@@ -69,7 +69,7 @@ layout: base
         <ul class="post-list">
           {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
           {%- for post in posts -%}
-            {%- if post.tags contains page.tag -%}
+
             <li>
               <span class="post-meta">{{ post.date | date: date_format }}</span>
               <h3>
@@ -81,7 +81,7 @@ layout: base
                 {{ post.excerpt }}
               {%- endif -%}
             </li>
-            {%- endif -%}
+
           {%- endfor -%}
         </ul>
         {% if site.paginate %}
