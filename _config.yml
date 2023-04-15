@@ -28,6 +28,7 @@ twitter_username: busse
 github_username:  busse
 
 # Build settings
+# TODO: direct theme to my own repo
 theme: minima
 plugins:
   - jekyll-feed
